@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78153ED41367E9DE00B65A6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78153ED31367E9DE00B65A6C /* UIKit.framework */; };
+		78153ED61367E9DE00B65A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78153ED51367E9DE00B65A6C /* Foundation.framework */; };
+		78153ED81367E9DE00B65A6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78153ED71367E9DE00B65A6C /* CoreGraphics.framework */; };
+		78153EDE1367E9DE00B65A6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78153EDC1367E9DE00B65A6C /* InfoPlist.strings */; };
+		78153EE11367E9DE00B65A6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153EE01367E9DE00B65A6C /* main.m */; };
+		78153EE41367E9DE00B65A6C /* MixiOAuthAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153EE31367E9DE00B65A6C /* MixiOAuthAppDelegate.m */; };
+		78153EE71367E9DE00B65A6C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78153EE51367E9DE00B65A6C /* MainWindow.xib */; };
+		78153EEE1367E9DE00B65A6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78153ED31367E9DE00B65A6C /* UIKit.framework */; };
+		78153EEF1367E9DE00B65A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78153ED51367E9DE00B65A6C /* Foundation.framework */; };
+		78153EF01367E9DE00B65A6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78153ED71367E9DE00B65A6C /* CoreGraphics.framework */; };
+		78153EF81367E9DE00B65A6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78153EF61367E9DE00B65A6C /* InfoPlist.strings */; };
+		78153EFB1367E9DE00B65A6C /* MixiOAuthTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 78153EFA1367E9DE00B65A6C /* MixiOAuthTests.h */; };
+		78153EFD1367E9DE00B65A6C /* MixiOAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153EFC1367E9DE00B65A6C /* MixiOAuthTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78153EF11367E9DE00B65A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78153EC61367E9DE00B65A6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78153ECE1367E9DE00B65A6C;
+			remoteInfo = MixiOAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78153ECF1367E9DE00B65A6C /* MixiOAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixiOAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78153ED31367E9DE00B65A6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		78153ED51367E9DE00B65A6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		78153ED71367E9DE00B65A6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		78153EDB1367E9DE00B65A6C /* MixiOAuth-Info.plist */ = {isa = PBXFileReference; path = "MixiOAuth-Info.plist"; sourceTree = "<group>"; };
+		78153EDD1367E9DE00B65A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		78153EDF1367E9DE00B65A6C /* MixiOAuth-Prefix.pch */ = {isa = PBXFileReference; path = "MixiOAuth-Prefix.pch"; sourceTree = "<group>"; };
+		78153EE01367E9DE00B65A6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		78153EE21367E9DE00B65A6C /* MixiOAuthAppDelegate.h */ = {isa = PBXFileReference; path = MixiOAuthAppDelegate.h; sourceTree = "<group>"; };
+		78153EE31367E9DE00B65A6C /* MixiOAuthAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiOAuthAppDelegate.m; sourceTree = "<group>"; };
+		78153EE61367E9DE00B65A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		78153EED1367E9DE00B65A6C /* MixiOAuthTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixiOAuthTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78153EF51367E9DE00B65A6C /* MixiOAuthTests-Info.plist */ = {isa = PBXFileReference; path = "MixiOAuthTests-Info.plist"; sourceTree = "<group>"; };
+		78153EF71367E9DE00B65A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		78153EF91367E9DE00B65A6C /* MixiOAuthTests-Prefix.pch */ = {isa = PBXFileReference; path = "MixiOAuthTests-Prefix.pch"; sourceTree = "<group>"; };
+		78153EFA1367E9DE00B65A6C /* MixiOAuthTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiOAuthTests.h; sourceTree = "<group>"; };
+		78153EFC1367E9DE00B65A6C /* MixiOAuthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiOAuthTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78153ECC1367E9DE00B65A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78153ED41367E9DE00B65A6C /* UIKit.framework in Frameworks */,
+				78153ED61367E9DE00B65A6C /* Foundation.framework in Frameworks */,
+				78153ED81367E9DE00B65A6C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78153EE91367E9DE00B65A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78153EEE1367E9DE00B65A6C /* UIKit.framework in Frameworks */,
+				78153EEF1367E9DE00B65A6C /* Foundation.framework in Frameworks */,
+				78153EF01367E9DE00B65A6C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78153EC41367E9DE00B65A6C = {
+			isa = PBXGroup;
+			children = (
+				78153ED91367E9DE00B65A6C /* MixiOAuth */,
+				78153EF31367E9DE00B65A6C /* MixiOAuthTests */,
+				78153ED21367E9DE00B65A6C /* Frameworks */,
+				78153ED01367E9DE00B65A6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78153ED01367E9DE00B65A6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78153ECF1367E9DE00B65A6C /* MixiOAuth.app */,
+				78153EED1367E9DE00B65A6C /* MixiOAuthTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78153ED21367E9DE00B65A6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78153ED31367E9DE00B65A6C /* UIKit.framework */,
+				78153ED51367E9DE00B65A6C /* Foundation.framework */,
+				78153ED71367E9DE00B65A6C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78153ED91367E9DE00B65A6C /* MixiOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				78153EE21367E9DE00B65A6C /* MixiOAuthAppDelegate.h */,
+				78153EE31367E9DE00B65A6C /* MixiOAuthAppDelegate.m */,
+				78153EE51367E9DE00B65A6C /* MainWindow.xib */,
+				78153EDA1367E9DE00B65A6C /* Supporting Files */,
+			);
+			path = MixiOAuth;
+			sourceTree = "<group>";
+		};
+		78153EDA1367E9DE00B65A6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78153EDB1367E9DE00B65A6C /* MixiOAuth-Info.plist */,
+				78153EDC1367E9DE00B65A6C /* InfoPlist.strings */,
+				78153EDF1367E9DE00B65A6C /* MixiOAuth-Prefix.pch */,
+				78153EE01367E9DE00B65A6C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78153EF31367E9DE00B65A6C /* MixiOAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				78153EFA1367E9DE00B65A6C /* MixiOAuthTests.h */,
+				78153EFC1367E9DE00B65A6C /* MixiOAuthTests.m */,
+				78153EF41367E9DE00B65A6C /* Supporting Files */,
+			);
+			path = MixiOAuthTests;
+			sourceTree = "<group>";
+		};
+		78153EF41367E9DE00B65A6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78153EF51367E9DE00B65A6C /* MixiOAuthTests-Info.plist */,
+				78153EF61367E9DE00B65A6C /* InfoPlist.strings */,
+				78153EF91367E9DE00B65A6C /* MixiOAuthTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78153ECE1367E9DE00B65A6C /* MixiOAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78153F001367E9DE00B65A6C /* Build configuration list for PBXNativeTarget "MixiOAuth" */;
+			buildPhases = (
+				78153ECB1367E9DE00B65A6C /* Sources */,
+				78153ECC1367E9DE00B65A6C /* Frameworks */,
+				78153ECD1367E9DE00B65A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixiOAuth;
+			productName = MixiOAuth;
+			productReference = 78153ECF1367E9DE00B65A6C /* MixiOAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78153EEC1367E9DE00B65A6C /* MixiOAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78153F031367E9DE00B65A6C /* Build configuration list for PBXNativeTarget "MixiOAuthTests" */;
+			buildPhases = (
+				78153EE81367E9DE00B65A6C /* Sources */,
+				78153EE91367E9DE00B65A6C /* Frameworks */,
+				78153EEA1367E9DE00B65A6C /* Resources */,
+				78153EEB1367E9DE00B65A6C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78153EF21367E9DE00B65A6C /* PBXTargetDependency */,
+			);
+			name = MixiOAuthTests;
+			productName = MixiOAuthTests;
+			productReference = 78153EED1367E9DE00B65A6C /* MixiOAuthTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78153EC61367E9DE00B65A6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = hybridism.com;
+			};
+			buildConfigurationList = 78153EC91367E9DE00B65A6C /* Build configuration list for PBXProject "MixiOAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 78153EC41367E9DE00B65A6C;
+			productRefGroup = 78153ED01367E9DE00B65A6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78153ECE1367E9DE00B65A6C /* MixiOAuth */,
+				78153EEC1367E9DE00B65A6C /* MixiOAuthTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78153ECD1367E9DE00B65A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78153EDE1367E9DE00B65A6C /* InfoPlist.strings in Resources */,
+				78153EE71367E9DE00B65A6C /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78153EEA1367E9DE00B65A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78153EF81367E9DE00B65A6C /* InfoPlist.strings in Resources */,
+				78153EFB1367E9DE00B65A6C /* MixiOAuthTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78153EEB1367E9DE00B65A6C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78153ECB1367E9DE00B65A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78153EE11367E9DE00B65A6C /* main.m in Sources */,
+				78153EE41367E9DE00B65A6C /* MixiOAuthAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78153EE81367E9DE00B65A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78153EFD1367E9DE00B65A6C /* MixiOAuthTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78153EF21367E9DE00B65A6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78153ECE1367E9DE00B65A6C /* MixiOAuth */;
+			targetProxy = 78153EF11367E9DE00B65A6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78153EDC1367E9DE00B65A6C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78153EDD1367E9DE00B65A6C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		78153EE51367E9DE00B65A6C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78153EE61367E9DE00B65A6C /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		78153EF61367E9DE00B65A6C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78153EF71367E9DE00B65A6C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78153EFE1367E9DE00B65A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		78153EFF1367E9DE00B65A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		78153F011367E9DE00B65A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixiOAuth/MixiOAuth-Prefix.pch";
+				INFOPLIST_FILE = "MixiOAuth/MixiOAuth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		78153F021367E9DE00B65A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixiOAuth/MixiOAuth-Prefix.pch";
+				INFOPLIST_FILE = "MixiOAuth/MixiOAuth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		78153F041367E9DE00B65A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MixiOAuth.app/MixiOAuth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixiOAuthTests/MixiOAuthTests-Prefix.pch";
+				INFOPLIST_FILE = "MixiOAuthTests/MixiOAuthTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		78153F051367E9DE00B65A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MixiOAuth.app/MixiOAuth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixiOAuthTests/MixiOAuthTests-Prefix.pch";
+				INFOPLIST_FILE = "MixiOAuthTests/MixiOAuthTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78153EC91367E9DE00B65A6C /* Build configuration list for PBXProject "MixiOAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78153EFE1367E9DE00B65A6C /* Debug */,
+				78153EFF1367E9DE00B65A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78153F001367E9DE00B65A6C /* Build configuration list for PBXNativeTarget "MixiOAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78153F011367E9DE00B65A6C /* Debug */,
+				78153F021367E9DE00B65A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		78153F031367E9DE00B65A6C /* Build configuration list for PBXNativeTarget "MixiOAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78153F041367E9DE00B65A6C /* Debug */,
+				78153F051367E9DE00B65A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78153EC61367E9DE00B65A6C /* Project object */;
+}
