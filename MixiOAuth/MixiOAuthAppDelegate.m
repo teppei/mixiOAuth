@@ -7,6 +7,7 @@
 //
 
 #import "MixiOAuthAppDelegate.h"
+#import "OAuthViewController.h"
 
 @implementation MixiOAuthAppDelegate
 
@@ -16,6 +17,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    CGRect bounds = [[UIScreen mainScreen] bounds];
+    _window = [[UIWindow alloc]initWithFrame:bounds];
+    
+    _oauth_view_controller = [[OAuthViewController alloc] init];
+    
+    // Consumer Key
+    _oauth_view_controller.client_id = @"";
+    // Consumer secret
+    _oauth_view_controller.client_secret = @"";
+    // 認可したいスコープ
+    _oauth_view_controller.scope = @"";
+    // デバイス
+    _oauth_view_controller.display = @"";
+    // リダイレクト先
+    _oauth_view_controller.redirect_uri = @"";
+    
+    [_window addSubview:_oauth_view_controller.view];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -61,6 +80,7 @@
 
 - (void)dealloc
 {
+    [_oauth_view_controller release], _oauth_view_controller = nil;
     [_window release];
     [super dealloc];
 }

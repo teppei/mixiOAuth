@@ -13,13 +13,24 @@
 		78153EDE1367E9DE00B65A6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78153EDC1367E9DE00B65A6C /* InfoPlist.strings */; };
 		78153EE11367E9DE00B65A6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153EE01367E9DE00B65A6C /* main.m */; };
 		78153EE41367E9DE00B65A6C /* MixiOAuthAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153EE31367E9DE00B65A6C /* MixiOAuthAppDelegate.m */; };
-		78153EE71367E9DE00B65A6C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78153EE51367E9DE00B65A6C /* MainWindow.xib */; };
 		78153EEE1367E9DE00B65A6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78153ED31367E9DE00B65A6C /* UIKit.framework */; };
 		78153EEF1367E9DE00B65A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78153ED51367E9DE00B65A6C /* Foundation.framework */; };
 		78153EF01367E9DE00B65A6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78153ED71367E9DE00B65A6C /* CoreGraphics.framework */; };
 		78153EF81367E9DE00B65A6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78153EF61367E9DE00B65A6C /* InfoPlist.strings */; };
 		78153EFB1367E9DE00B65A6C /* MixiOAuthTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 78153EFA1367E9DE00B65A6C /* MixiOAuthTests.h */; };
 		78153EFD1367E9DE00B65A6C /* MixiOAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153EFC1367E9DE00B65A6C /* MixiOAuthTests.m */; };
+		78153F081367EAA600B65A6C /* OAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F071367EAA600B65A6C /* OAuthViewController.m */; };
+		78153F131367FC6900B65A6C /* LoginWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F121367FC6900B65A6C /* LoginWebViewController.m */; };
+		78153F161368232F00B65A6C /* AccessTokenResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F151368232E00B65A6C /* AccessTokenResponseParser.m */; };
+		78153F2B136839EB00B65A6C /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F1A136839EB00B65A6C /* NSObject+JSON.m */; };
+		78153F2C136839EB00B65A6C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F1C136839EB00B65A6C /* SBJsonParser.m */; };
+		78153F2D136839EB00B65A6C /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F1E136839EB00B65A6C /* SBJsonStreamParser.m */; };
+		78153F2E136839EB00B65A6C /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F20136839EB00B65A6C /* SBJsonStreamParserAdapter.m */; };
+		78153F2F136839EB00B65A6C /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F22136839EB00B65A6C /* SBJsonStreamParserState.m */; };
+		78153F30136839EB00B65A6C /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F24136839EB00B65A6C /* SBJsonStreamWriter.m */; };
+		78153F31136839EB00B65A6C /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F26136839EB00B65A6C /* SBJsonStreamWriterState.m */; };
+		78153F32136839EB00B65A6C /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F28136839EB00B65A6C /* SBJsonTokeniser.m */; };
+		78153F33136839EB00B65A6C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153F2A136839EB00B65A6C /* SBJsonWriter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +48,43 @@
 		78153ED31367E9DE00B65A6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		78153ED51367E9DE00B65A6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78153ED71367E9DE00B65A6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		78153EDB1367E9DE00B65A6C /* MixiOAuth-Info.plist */ = {isa = PBXFileReference; path = "MixiOAuth-Info.plist"; sourceTree = "<group>"; };
+		78153EDB1367E9DE00B65A6C /* MixiOAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MixiOAuth-Info.plist"; sourceTree = "<group>"; };
 		78153EDD1367E9DE00B65A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		78153EDF1367E9DE00B65A6C /* MixiOAuth-Prefix.pch */ = {isa = PBXFileReference; path = "MixiOAuth-Prefix.pch"; sourceTree = "<group>"; };
+		78153EDF1367E9DE00B65A6C /* MixiOAuth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixiOAuth-Prefix.pch"; sourceTree = "<group>"; };
 		78153EE01367E9DE00B65A6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		78153EE21367E9DE00B65A6C /* MixiOAuthAppDelegate.h */ = {isa = PBXFileReference; path = MixiOAuthAppDelegate.h; sourceTree = "<group>"; };
+		78153EE21367E9DE00B65A6C /* MixiOAuthAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiOAuthAppDelegate.h; sourceTree = "<group>"; };
 		78153EE31367E9DE00B65A6C /* MixiOAuthAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiOAuthAppDelegate.m; sourceTree = "<group>"; };
-		78153EE61367E9DE00B65A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		78153EED1367E9DE00B65A6C /* MixiOAuthTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixiOAuthTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78153EF51367E9DE00B65A6C /* MixiOAuthTests-Info.plist */ = {isa = PBXFileReference; path = "MixiOAuthTests-Info.plist"; sourceTree = "<group>"; };
+		78153EF51367E9DE00B65A6C /* MixiOAuthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MixiOAuthTests-Info.plist"; sourceTree = "<group>"; };
 		78153EF71367E9DE00B65A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		78153EF91367E9DE00B65A6C /* MixiOAuthTests-Prefix.pch */ = {isa = PBXFileReference; path = "MixiOAuthTests-Prefix.pch"; sourceTree = "<group>"; };
+		78153EF91367E9DE00B65A6C /* MixiOAuthTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixiOAuthTests-Prefix.pch"; sourceTree = "<group>"; };
 		78153EFA1367E9DE00B65A6C /* MixiOAuthTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiOAuthTests.h; sourceTree = "<group>"; };
 		78153EFC1367E9DE00B65A6C /* MixiOAuthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiOAuthTests.m; sourceTree = "<group>"; };
+		78153F061367EAA600B65A6C /* OAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthViewController.h; sourceTree = "<group>"; };
+		78153F071367EAA600B65A6C /* OAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthViewController.m; sourceTree = "<group>"; };
+		78153F111367FC6800B65A6C /* LoginWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginWebViewController.h; sourceTree = "<group>"; };
+		78153F121367FC6900B65A6C /* LoginWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWebViewController.m; sourceTree = "<group>"; };
+		78153F141368232E00B65A6C /* AccessTokenResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessTokenResponseParser.h; sourceTree = "<group>"; };
+		78153F151368232E00B65A6C /* AccessTokenResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessTokenResponseParser.m; sourceTree = "<group>"; };
+		78153F18136839EB00B65A6C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		78153F19136839EB00B65A6C /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
+		78153F1A136839EB00B65A6C /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
+		78153F1B136839EB00B65A6C /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		78153F1C136839EB00B65A6C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		78153F1D136839EB00B65A6C /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		78153F1E136839EB00B65A6C /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		78153F1F136839EB00B65A6C /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		78153F20136839EB00B65A6C /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		78153F21136839EB00B65A6C /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		78153F22136839EB00B65A6C /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		78153F23136839EB00B65A6C /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		78153F24136839EB00B65A6C /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		78153F25136839EB00B65A6C /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		78153F26136839EB00B65A6C /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		78153F27136839EB00B65A6C /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		78153F28136839EB00B65A6C /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		78153F29136839EB00B65A6C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		78153F2A136839EB00B65A6C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +114,7 @@
 		78153EC41367E9DE00B65A6C = {
 			isa = PBXGroup;
 			children = (
+				78153F17136839EB00B65A6C /* Classes */,
 				78153ED91367E9DE00B65A6C /* MixiOAuth */,
 				78153EF31367E9DE00B65A6C /* MixiOAuthTests */,
 				78153ED21367E9DE00B65A6C /* Frameworks */,
@@ -110,8 +146,13 @@
 			children = (
 				78153EE21367E9DE00B65A6C /* MixiOAuthAppDelegate.h */,
 				78153EE31367E9DE00B65A6C /* MixiOAuthAppDelegate.m */,
-				78153EE51367E9DE00B65A6C /* MainWindow.xib */,
 				78153EDA1367E9DE00B65A6C /* Supporting Files */,
+				78153F061367EAA600B65A6C /* OAuthViewController.h */,
+				78153F071367EAA600B65A6C /* OAuthViewController.m */,
+				78153F111367FC6800B65A6C /* LoginWebViewController.h */,
+				78153F121367FC6900B65A6C /* LoginWebViewController.m */,
+				78153F141368232E00B65A6C /* AccessTokenResponseParser.h */,
+				78153F151368232E00B65A6C /* AccessTokenResponseParser.m */,
 			);
 			path = MixiOAuth;
 			sourceTree = "<group>";
@@ -145,6 +186,32 @@
 				78153EF91367E9DE00B65A6C /* MixiOAuthTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78153F17136839EB00B65A6C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				78153F18136839EB00B65A6C /* JSON.h */,
+				78153F19136839EB00B65A6C /* NSObject+JSON.h */,
+				78153F1A136839EB00B65A6C /* NSObject+JSON.m */,
+				78153F1B136839EB00B65A6C /* SBJsonParser.h */,
+				78153F1C136839EB00B65A6C /* SBJsonParser.m */,
+				78153F1D136839EB00B65A6C /* SBJsonStreamParser.h */,
+				78153F1E136839EB00B65A6C /* SBJsonStreamParser.m */,
+				78153F1F136839EB00B65A6C /* SBJsonStreamParserAdapter.h */,
+				78153F20136839EB00B65A6C /* SBJsonStreamParserAdapter.m */,
+				78153F21136839EB00B65A6C /* SBJsonStreamParserState.h */,
+				78153F22136839EB00B65A6C /* SBJsonStreamParserState.m */,
+				78153F23136839EB00B65A6C /* SBJsonStreamWriter.h */,
+				78153F24136839EB00B65A6C /* SBJsonStreamWriter.m */,
+				78153F25136839EB00B65A6C /* SBJsonStreamWriterState.h */,
+				78153F26136839EB00B65A6C /* SBJsonStreamWriterState.m */,
+				78153F27136839EB00B65A6C /* SBJsonTokeniser.h */,
+				78153F28136839EB00B65A6C /* SBJsonTokeniser.m */,
+				78153F29136839EB00B65A6C /* SBJsonWriter.h */,
+				78153F2A136839EB00B65A6C /* SBJsonWriter.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				78153EDE1367E9DE00B65A6C /* InfoPlist.strings in Resources */,
-				78153EE71367E9DE00B65A6C /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +322,18 @@
 			files = (
 				78153EE11367E9DE00B65A6C /* main.m in Sources */,
 				78153EE41367E9DE00B65A6C /* MixiOAuthAppDelegate.m in Sources */,
+				78153F081367EAA600B65A6C /* OAuthViewController.m in Sources */,
+				78153F131367FC6900B65A6C /* LoginWebViewController.m in Sources */,
+				78153F161368232F00B65A6C /* AccessTokenResponseParser.m in Sources */,
+				78153F2B136839EB00B65A6C /* NSObject+JSON.m in Sources */,
+				78153F2C136839EB00B65A6C /* SBJsonParser.m in Sources */,
+				78153F2D136839EB00B65A6C /* SBJsonStreamParser.m in Sources */,
+				78153F2E136839EB00B65A6C /* SBJsonStreamParserAdapter.m in Sources */,
+				78153F2F136839EB00B65A6C /* SBJsonStreamParserState.m in Sources */,
+				78153F30136839EB00B65A6C /* SBJsonStreamWriter.m in Sources */,
+				78153F31136839EB00B65A6C /* SBJsonStreamWriterState.m in Sources */,
+				78153F32136839EB00B65A6C /* SBJsonTokeniser.m in Sources */,
+				78153F33136839EB00B65A6C /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,14 +362,6 @@
 				78153EDD1367E9DE00B65A6C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		78153EE51367E9DE00B65A6C /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78153EE61367E9DE00B65A6C /* en */,
-			);
-			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
 		78153EF61367E9DE00B65A6C /* InfoPlist.strings */ = {

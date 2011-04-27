@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MixiOAuthAppDelegate : NSObject <UIApplicationDelegate> {
+@class OAuthViewController;
 
+@interface MixiOAuthAppDelegate : NSObject <UIApplicationDelegate> {
+    OAuthViewController *_oauth_view_controller;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
